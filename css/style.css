@@ -1,10 +1,7 @@
 /****** General ***********/
 
-/* reset margin to 0 for everything*/
 * {
     font-family: 'Raleway', sans-serif;
-    margin:0;
-
 }
 
 :root {
@@ -82,7 +79,7 @@ header img {
 
 /* Rectification of margin / rest optional ?*/
 nav {
-    margin-top: 1em;
+    
     height:fit-content;
     width: auto;
 }
@@ -100,17 +97,84 @@ nav li {
 
 /* nav hover effect */
 nav a:hover{
-    border-top:2px solid #0065FC;
-    color:#0065FC;
+    border-top:2px solid var(--main-color);
+    color:var(--main-color);
     padding-top:1em;
 }
 
-/****** Research ******/
-.research {
-    margin-top:4rem;
+/****** Research form  ******/
+
+::placeholder {
+    color:black;
+    opacity: 1; /* firefox */
 }
-.research h2,p {
+
+.research-form {
+    margin:2rem 0 2rem 0;
+    display:flex;
+
 }
+.research-form input{
+    text-align: center;
+    font-weight: bolder;
+    color:black;
+    border:none;
+    border-bottom:var(--main-bg-color) solid 2px;
+    border-top:var(--main-bg-color) solid 2px ;
+}
+.research-form label{
+    padding:1rem 1rem 1rem 1rem;
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    
+}
+.research-form button{
+    font-weight: bolder;
+    border:none;
+    color:white;
+    text-align: center;
+    background-color: var(--main-color);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/** hide mobile button by default  **/
+.mobile-button {
+    visibility: hidden;
+}
+
+
+
+/* filter selection */
+.filter-box {
+    margin:2rem 0 2rem 0;
+    width:fit-content;
+    
+}
+.filter-box_list {
+    padding-left:0;
+    list-style-type: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.filter-box_list li{
+    
+    border:#F2F2F2 solid 2px ;
+    border-radius: 20px;
+    padding:1rem 2rem 1rem 2rem;
+    margin:0 2rem 0 2rem;
+    
+
+}
+
+/** info bar **/
+.filter-box_info {
+    margin:2rem 0 2rem 0;
+}
+
 
 
 
