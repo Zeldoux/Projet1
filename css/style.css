@@ -57,6 +57,40 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/******** Header logo/nav ********/
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+}
+/*change logo size */
+header img {
+    
+
+}
+nav {
+    height:fit-content;
+    width: auto;
+}
+nav ul{
+    padding:0; /* reset padding over main-container rules */
+    list-style-type: none;
+    display:flex;
+}
+ /* space between <li> */
+nav li {
+    padding: 0 30px;
+}
+
+/* nav hover effect */
+nav a:hover{
+    border-top:2px solid #0065FC;
+    color:#0065FC;
+    padding-top:20px;
+}
+
+
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
