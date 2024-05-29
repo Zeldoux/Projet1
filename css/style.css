@@ -13,7 +13,10 @@
     color: var(--main-color);
 }
 
+/* reset  margin // padding on <body> */
 body {
+    margin:0;
+    padding:0;
     display: flex;
     justify-content: center;
 }
@@ -21,7 +24,7 @@ body {
 .main-container {
     width: 100%;
     max-width: 1440px;
-    padding: 0 50px;
+    padding: 0 1rem; /* reduction padding left-right */
     box-sizing: border-box;
 }
 
@@ -60,19 +63,25 @@ a {
 /******** Header logo/nav ********/
 
 header {
+    padding:0;
     display: flex;
     justify-content: space-between;
 
 }
 /*change logo size */
 header img {
-    
+    display:flex;
+    width: 80px;
+    padding:1rem 1rem 1rem 0;
 
 }
+
+/* optional ? */
 nav {
     height:fit-content;
     width: auto;
 }
+
 nav ul{
     padding:0; /* reset padding over main-container rules */
     list-style-type: none;
@@ -80,14 +89,15 @@ nav ul{
 }
  /* space between <li> */
 nav li {
-    padding: 0 30px;
+    font-size: small;
+    padding: 0 1rem;
 }
 
 /* nav hover effect */
 nav a:hover{
     border-top:2px solid #0065FC;
     color:#0065FC;
-    padding-top:20px;
+    padding-top:1em;
 }
 
 
