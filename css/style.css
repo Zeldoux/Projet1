@@ -153,9 +153,8 @@ nav a:hover{
 /* filter selection */
 .filter-box {
     display:flex;
-    justify-content: column;
     align-items: center;
-    margin:2rem 0 2rem 0;
+    gap:15px;
     
     
 }
@@ -167,6 +166,7 @@ nav a:hover{
     display:flex;
     justify-content: space-between;
     align-items: center;
+    gap:15px;
     
     
 }
@@ -174,14 +174,10 @@ nav a:hover{
 .filter-box li{ 
     border:var(--main-bg-color) solid 2px ;
     border-radius: 25px;
-    padding:0.8rem 1.2rem 0.8rem 1.2rem;
-    margin:0 1rem 0 1rem; /* gap ? */
-    
-    
-
+    padding:0.8rem 1.2rem 0.8rem 1.2rem;  /* set box size ? */
 }
 .filter-box li:hover{
-    background-color:var(--filter-bg-color); /* question #0065FC ? */
+    background-color:var(--filter-bg-color); 
 
 }
 .filter-box i {
@@ -196,13 +192,13 @@ nav a:hover{
 }
 /* info icon */
 .info-box i{
-    width:24px;
+    width:40px;
     height:24px;
     text-align: center;
     padding-top: 5px;
     border:var(--main-bg-color) solid 1px;
     border-radius: 50%;
-    margin-right: 15px;
+    margin-right: 10px;
     
     
     
@@ -235,26 +231,27 @@ nav a:hover{
 }
 /* card container*/
 .hebergements-cards {
-    gap:30px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    
+    gap:30px;
 }
 /* hebergements card */
 .hebergements-cards .card{
     display:flex;
     flex-direction:column;
     gap:4px;
-
 }
 /* hebergements card img */
 .hebergements-cards  img{
-    width:230px; /* define image size ? */
-    height:124px;
+    width:100%;
+    height:120px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+}
+.hebergements-cards a{
+    width:30%;
 }
 
 /* hebergements card text container */
@@ -264,8 +261,8 @@ nav a:hover{
     justify-content: space-between;
     box-sizing: border-box;
     gap:8px;
-    padding:0 15px 0 15px;
-    
+    padding-right:15px;
+    padding-left:15px;
     
 }
 
@@ -341,24 +338,28 @@ nav a:hover{
 .activity-cards {
     display:flex;
     justify-content: space-between;
+    gap:30px;
 
 }
+.activity-cards a{
+    width:100%;
+}
 .activity-cards .card {
-    width:305px; /* rectified the second cards size with width:290px over 100% as it was before making the image having no defined width for differents images format portrait/landscape */
-    height:400px;
+    width:100%;
+    height:100%;
     display:flex;
     flex-direction: column;
     padding:0; /* to put img over card*/
+    gap:15px;
 }
 .activity-cards img{
     width:100%;
-    height: 350px;
+    height: 90%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .activity-cards .card-content {
-    margin-top: 1rem;
-    margin-left:1rem;
+    padding-left:15px;
 }
 
 /********* Footer *********/
@@ -412,16 +413,9 @@ footer .footer-box_content {
         flex-wrap: wrap;     
         gap:10px;
     }
-    .hebergements-cards .card {
-        display:flex;
-        flex-direction:column;
-        box-sizing: border-box;
-
+    .hebergements-cards a{
+        width:32%;
     }
-    .hebergements-cards img{
-        width: 200px;
-    }
-    
 
     .populaires {
         width: 100%;
@@ -446,15 +440,16 @@ footer .footer-box_content {
         font-size: 13px;
     }
     /* activity*/
-    .activity-cards .card {
-        width:160px; /* rectified the second cards size with width:290px over 100% as it was before making the image having no defined width for differents images format portrait/landscape */
-        height:240px;
-    }
+
     .activity-cards img{
         width:100%;
-        height:70%;
+        height:80%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
+    }
+    .activity-cards .card-content{
+        padding-top:0.1rem;
+    }
 }
 
 /* Small devices (phones, less than 768px) */
@@ -532,18 +527,35 @@ footer .footer-box_content {
         flex-wrap: wrap;
         align-items: start;
     }
-    .filter-box li{
-        margin:0;
-        width:40%;
-    }
+
     .filter-box ul{
         display: flex;
         flex-direction: row;
-        justify-content: flex-start;
+        justify-content: centers;
         flex-wrap: wrap;
         align-items: flex-start;
-        gap:20px;
+        gap:10px;
+        font-size: 14px;
     }
 
+    .filter-box li{
+        margin:0;
+        width:35%;
+    }
+    .hebergements-and-populaires {
+        flex-direction: column-reverse;
+    }
+    .hebergements-and-populaires section {
+        border-radius:0;
+    }
+    .populaires-cards {
+        flex-direction: column;
+    }
+    .populaires-cards a{
+        width:100%;
+    }
+    .hebergements-and-populaires section.hebergements {
+        background-color: white; /** i can also use !important rules that force the rule over global rules  with the selector .hebergements only **/ 
+    }
     /* ... */
 }
