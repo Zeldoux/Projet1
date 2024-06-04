@@ -531,7 +531,6 @@ footer .footer-box_content {
     .filter-box ul{
         display: flex;
         flex-direction: row;
-        justify-content: centers;
         flex-wrap: wrap;
         align-items: flex-start;
         gap:10px;
