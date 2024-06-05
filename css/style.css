@@ -359,7 +359,7 @@ nav a:hover{
     border-top-right-radius: 15px;
 }
 .activity-cards .card-content {
-    padding-left:15px;
+    padding: 15px;
 }
 
 /********* Footer *********/
@@ -444,6 +444,7 @@ footer .footer-box_content {
     .activity-cards img{
         width:100%;
         height:80%;
+        min-height:80%;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
@@ -477,8 +478,6 @@ footer .footer-box_content {
         display: flex;
         justify-content: space-around;
         text-align: center;
-    }
-    nav a {
     }
     nav li{
         width:100%; /* make the two <li> centered on left side and right side */
@@ -555,6 +554,24 @@ footer .footer-box_content {
     }
     .hebergements-and-populaires section.hebergements {
         background-color: white; /** i can also use !important rules that force the rule over global rules  with the selector .hebergements only **/ 
+    }
+    .hebergements-cards {
+        flex-direction: column;
+    }
+    .hebergements-cards a{
+        width:100%;
+    }
+    .activity-cards {
+        flex-direction: column;
+
+    }
+    .activity-cards img{
+        width:100%;
+        aspect-ratio: 16/9; /* corrrect solution to make the cards height*/
+
+    }
+    .footer-content {
+        flex-direction: column;
     }
     /* ... */
 }
