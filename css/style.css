@@ -131,6 +131,9 @@ nav a:hover{
     border-bottom:var(--main-bg-color) solid 2px;
     border-top:var(--main-bg-color) solid 2px ;
 }
+.research-form input:focus{
+    outline: none;
+}
 /*research label style */
 .research-form label{
     padding:1rem 1rem 1rem 1rem;
@@ -347,12 +350,13 @@ nav a:hover{
 }
 .activity-cards img{
     width:100%;
-    height: 88%; /* % or px ? */
+    height: 400px; /* % or px ? */
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .activity-cards .card-content {
     padding-left: 20px;
+    padding-bottom:20px;
 }
 
 /********* Footer *********/
@@ -423,8 +427,7 @@ footer .footer-box_content {
 
     .activity-cards img{
         width:100%;
-        height:80%;
-        min-height:80%;
+        height:200px; /* changed % into px */
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
     }
