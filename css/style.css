@@ -27,7 +27,11 @@ body {
     max-width: 1440px;
     padding: 0 2rem; /* reduction padding left-right */
     box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+    gap:30px;
 }
+/* added main flex display and gap instead of margin and padding for each parts*/ 
 main {
     display:flex;
     flex-direction: column;
@@ -69,7 +73,6 @@ a {
 /******** Header logo/nav ********/
 
 header {
-    margin-bottom:3rem;
     display: flex;
     justify-content: space-between;
 
@@ -78,7 +81,7 @@ header {
 header img {
     display:flex;
     width: 80px;
-    padding:1rem 1rem 1rem 0;
+    padding:2rem 0 2rem 0;
 
 }
 
@@ -103,7 +106,7 @@ nav > ul{
 nav a:hover{
     border-top:var(--main-color) solid 2px;
     color:var(--main-color);
-    padding-top: 1em;
+    padding-top: 0.9rem;
 }
 
 /****** Research form  ******/
@@ -219,6 +222,7 @@ nav a:hover{
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap:40px;
 }
 
 .hebergements-and-populaires section {
@@ -338,9 +342,6 @@ nav a:hover{
     gap:30px;
     padding:30px;
 }
-.activity-title{
-    padding-top:30px;
-}
 
 .activity-cards {
     display:flex;
@@ -357,16 +358,16 @@ nav a:hover{
     display:flex;
     flex-direction: column;
     padding:0; /* to put img over card*/
-    gap:15px;
+    gap:20px;
 }
 .activity-cards img{
     width:100%;
-    height: 90%;
+    height: 88%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 .activity-cards .card-content {
-    padding: 15px;
+    padding-left: 20px;
 }
 
 /********* Footer *********/
@@ -400,7 +401,6 @@ footer .footer-box_content {
         display:flex;
         flex-direction: column;
         align-items:flex-start;
-        margin:2rem 0 2rem 0;
         gap:20px;
         
         
@@ -408,6 +408,7 @@ footer .footer-box_content {
 
     .hebergements-and-populaires {
         flex-direction: column;
+        gap:
     }
     /******* hebergements*******/
     .hebergements {
@@ -418,7 +419,7 @@ footer .footer-box_content {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;     
-        gap:10px;
+        gap:10px; /* px or rem ? */
     }
     .hebergements-cards a{
         width:32%;
@@ -426,7 +427,6 @@ footer .footer-box_content {
 
     .populaires {
         width: 100%;
-        margin-top: 50px;
     }
 
     .populaires-cards {
@@ -456,7 +456,7 @@ footer .footer-box_content {
         border-top-right-radius: 15px;
     }
     .activity-cards .card-content{
-        padding-top:0.1rem;
+        padding-bottom:1.5rem;
     }
 }
 
@@ -547,20 +547,26 @@ footer .footer-box_content {
         align-items: flex-start;
         gap:10px;
         font-size: 14px;
+        width:100%;
     }
 
     .filter-box li{
         margin:0;
         width:35%;
     }
+    /**** hebergement and populaires **/
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
     .hebergements-and-populaires section {
         border-radius:0;
     }
+    /* populaires */
     .populaires-cards {
         flex-direction: column;
+    }
+    .populaires {
+        margin:0;
     }
     .populaires-cards a{
         width:100%;
@@ -568,12 +574,14 @@ footer .footer-box_content {
     .hebergements-and-populaires section.hebergements {
         background-color: white; /** i can also use !important rules that force the rule over global rules  with the selector .hebergements only **/ 
     }
+    /* hebergements */
     .hebergements-cards {
         flex-direction: column;
     }
     .hebergements-cards a{
         width:100%;
     }
+    /* activity */
     .activity-cards {
         flex-direction: column;
 
@@ -583,6 +591,10 @@ footer .footer-box_content {
         aspect-ratio: 16/9; /* corrrect solution to make the cards height*/
 
     }
+    .activity-cards .card-content{
+        padding-bottom:1.5rem;
+    }
+    /* footer */
     .footer-content {
         flex-direction: column;
     }
