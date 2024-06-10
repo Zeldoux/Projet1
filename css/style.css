@@ -346,7 +346,6 @@ nav a:hover{
     display:flex;
     flex-direction: column;
     padding:0; /* to put img over card*/
-    gap:20px;
 }
 .activity-cards img{
     width:100%;
@@ -355,8 +354,7 @@ nav a:hover{
     border-top-right-radius: 15px;
 }
 .activity-cards .card-content {
-    padding-left: 20px;
-    padding-bottom:20px;
+    padding:1rem;
 }
 
 /********* Footer *********/
