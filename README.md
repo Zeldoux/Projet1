@@ -1,6 +1,6 @@
 OpenClassrooms - Projet n°2 - Créez la page d'accueil d'une agence de voyage avec HTML & CSS
 
-Deuxième projet de mon parcours de développeur web avec Open Classrooms. L'objectif de ce projet était d'intégrer l'interface responsive du site, avec a disposition plusieurs maquettes Figma, une note de synthèse pour l'intégration du site Booki, une base de code contenant une structure HTML/Css et les images.
+Deuxième projet de mon parcours de développeur web avec OpenClassrooms. L'objectif de ce projet était d'intégrer l'interface responsive du site, avec a disposition plusieurs maquettes Figma, une note de synthèse pour l'intégration du site Booki, une base de code contenant une structure HTML/Css et les images.
 
 Éléments fournis pour le projet :
 
