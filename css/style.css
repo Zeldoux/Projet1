@@ -53,6 +53,14 @@ a {
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    /* transition part of card:hover effect optional */
+    transition:transform 0.3s;
+    /* optional cursor effect on card*/
+    cursor: pointer;
+}
+/* hover effect over a card optional */
+.card:hover {
+    transform: scale(1.05);
 }
 
 .card img {
@@ -151,6 +159,8 @@ nav a:hover{
     padding:15px 16px 15px 16px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
+    /* optional cursor effect on button*/
+    cursor: pointer;
 }
 
 /** hide mobile button by default  **/
@@ -184,7 +194,9 @@ nav a:hover{
     padding:0.8rem 1.2rem 0.8rem 1.2rem;  /* set box size ? */
 }
 .filter-content li:hover{
-    background-color:var(--filter-bg-color); 
+    background-color:var(--filter-bg-color);
+    /* optional cursor effect on filter*/
+    cursor: pointer; 
 }
 .filter-content i {
     margin-right: 0.5rem;
@@ -240,10 +252,6 @@ nav a:hover{
 }
 .hebergements-cards a{
     width:30%;
-    transition:transform 0.3s;
-}
-.hebergements-cards a:hover {
-    transform: scale(1.05);
 }
 .hebergements-cards .card{
     display:flex;
@@ -476,7 +484,6 @@ footer .footer-box_content {
     .research {
         display: flex;
         flex-direction: column;
-        align-items: center;
         padding: 0 20px 0 20px;
         gap:35px;
     }
@@ -557,13 +564,7 @@ footer .footer-box_content {
     /* activity */
     .activity-cards {
         flex-direction: column;
-    }
-    .activity-cards img{
-        width:100%;
-        aspect-ratio: 16/9; /* corrrect solution to make the cards height*/
-        height:100%;
-    }
-    
+    }    
     /* footer */
     .footer-content {
         flex-direction: column;
