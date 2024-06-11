@@ -229,37 +229,42 @@ nav a:hover{
     justify-content: space-between;
     gap:30px;
 }
-/* card container*/
+
+/* hebergement card container*/
 .hebergements-cards {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap:30px;
+    gap:25px;
 }
-/* hebergements card */
+.hebergements-cards a{
+    width:30%;
+    transition:transform 0.3s;
+}
+.hebergements-cards a:hover {
+    transform: scale(1.05);
+}
 .hebergements-cards .card{
     display:flex;
     flex-direction:column;
     gap:10px;
+    height:220px; /* add size to the card for responsiv desktop size */
 }
 /* hebergements card img */
 .hebergements-cards  img{
     width:100%;
-    height:120px;
+    height:60%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.hebergements-cards a{
-    width:30%;
-}
+
 
 /* hebergements card text container */
 .hebergements-cards .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    box-sizing: border-box;
     gap:8px;
     padding-right:15px;
     padding-left:15px;
@@ -268,16 +273,11 @@ nav a:hover{
 /* hebergements card text */
 .hebergements-cards .card-title {
     margin-bottom: 10px;
+    font-size: 15px;
 }
 .hebergements-cards .card-subtitle {
     font-size:14px;
 }
-
-.hebergements-cards .card-rating {
-    margin-bottom: 10px;
-}
-
-
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -397,14 +397,8 @@ footer .footer-box_content {
         width: 100%;
         
     }
-    .hebergements-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;     
-        gap:10px; /* px or rem ? */
-    }
-    .hebergements-cards a{
-        width:32%;
+    .hebergements-cards .card-content {
+        white-space: nowrap;
     }
     /**** populaires ****/
     .populaires {
@@ -418,6 +412,7 @@ footer .footer-box_content {
     .populaires-cards a {
         width: 30%;
     }
+    
     .populaires-cards .card-title {
         font-size: 14px;
     }
