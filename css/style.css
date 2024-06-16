@@ -191,7 +191,7 @@ nav a:hover{
 .filter-content li{ 
     border:var(--main-bg-color) solid 2px ;
     border-radius: 25px;
-    padding:0.8rem 1.2rem 0.8rem 1.2rem;  /* set box size  */
+    padding:0.8rem 1.2rem 0.8rem 1.2rem;  /* set  border box size  */
 }
 .filter-content li:hover{
     background-color:var(--filter-bg-color);
@@ -220,22 +220,22 @@ nav a:hover{
     align-items: center;
 }
 
-/****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+/****** accommodation And popular ***********/
+.accommodation-and-popular {
     display: flex;
     justify-content: space-between;
     gap:40px;
 }
 
-.hebergements-and-populaires section {
+.accommodation-and-popular section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
-    padding: 30px;
+    padding: 2rem;
     box-sizing: border-box;
 }
 
-/****** Hebergements ***********/
-.hebergements {
+/****** accommodation ***********/
+.accommodation {
     width: 65%;
     display:flex;
     flex-direction: column;
@@ -244,24 +244,24 @@ nav a:hover{
 }
 
 /* hebergement card container*/
-.hebergements-cards {
+.accommodation-cards {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     gap:25px;
 }
-.hebergements-cards a{
+.accommodation-cards a{
     width:30%;
 }
-.hebergements-cards .card{
+.accommodation-cards .card{
     display:flex;
     flex-direction:column;
     gap:10px;
     height:220px; /* add size to the card for responsiv desktop size */
 }
-/* hebergements card img */
-.hebergements-cards  img{
+/* accommodation card img */
+.accommodation-cards  img{
     width:100%;
     height:60%;
     border-top-left-radius: 20px;
@@ -269,48 +269,47 @@ nav a:hover{
 }
 
 
-/* hebergements card text container */
-.hebergements-cards .card-content {
+/* accommodation card text container */
+.accommodation-cards .card-content {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap:8px;
-    padding-right:15px;
-    padding-left:15px;
+    padding-left:0.5rem;
 }
 
-/* hebergements card text */
-.hebergements-cards .card-title {
-    margin-bottom: 10px;
+/* accommodation card text */
+.accommodation-cards .card-title {
+    margin-bottom: 0.5rem;
     font-size: 15px;
 }
-.hebergements-cards .card-subtitle {
+.accommodation-cards .card-subtitle {
     font-size:14px;
 }
-/****** Populaires ***********/
-.populaires {
+/****** popular ***********/
+.popular {
     width: 32%;
 }
 
-.populaires-title {
+.popular-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.populaires-cards .card {
+.popular-cards .card {
     display: flex;
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.popular-cards img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.popular-cards .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -319,16 +318,16 @@ nav a:hover{
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.popular-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.popular-cards .card-subtitle {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.popular-cards .card-rating {
     margin-bottom: 5px;
 }
 
@@ -337,14 +336,13 @@ nav a:hover{
     display: flex;
     flex-direction: column;
     gap:30px;
-    padding:30px;
+    padding:2rem;
 }
 
 .activity-cards {
     display:flex;
     justify-content: space-between;
     gap:30px;
-
 }
 .activity-cards a{
     width:100%;
@@ -398,35 +396,35 @@ footer .footer-box_content {
         height:25px;
         border:var(--filter-bg-color) solid 1px;
     }
-    .hebergements-and-populaires {
+    .accommodation-and-popular {
         flex-direction: column;
     }
-    /******* hebergements*******/
-    .hebergements {
+    /******* accommodation*******/
+    .accommodation {
         width: 100%;
         
     }
     /* to fix a little responsiv issue with hebergement-cards text */
-    .hebergements-cards .card-content {
+    .accommodation-cards .card-content {
         white-space: nowrap;
     }
-    /**** populaires ****/
-    .populaires {
+    /**** popular ****/
+    .popular {
         width: 100%;
     }
-    .populaires-cards {
+    .popular-cards {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    .populaires-cards a {
+    .popular-cards a {
         width: 30%;
     }
     
-    .populaires-cards .card-title {
+    .popular-cards .card-title {
         font-size: 14px;
     }
-    .populaires-cards .card-subtitle {
+    .popular-cards .card-subtitle {
         font-size: 13px;
     }
     /* activity*/
@@ -493,7 +491,7 @@ footer .footer-box_content {
         margin:0;
         width:100%;
     }
-    .research-form button i{
+    .research-form .mobile-button{
         display:flex;
     }
 
@@ -535,32 +533,32 @@ footer .footer-box_content {
         min-height:25px;
     }
   
-    /**** hebergement and populaires **/
-    .hebergements-and-populaires {
+    /**** hebergement and popular **/
+    .accommodation-and-popular {
         flex-direction: column-reverse;
     }
-    .hebergements-and-populaires section {
+    .accommodation-and-popular section {
         border-radius:0;
         padding:20px;
     }
-    /* populaires */
-    .populaires-cards {
+    /* popular */
+    .popular-cards {
         flex-direction: column;
     }
-    .populaires {
+    .popular {
         margin:0;
     }
-    .populaires-cards a{
+    .popular-cards a{
         width:100%;
     }
-    .hebergements-and-populaires section.hebergements {
-        background-color: white; /** i can also use !important rules that force the rule over global rules  with the selector .hebergements only **/ 
+    .accommodation-and-popular section.accommodation {
+        background-color: white; /** i can also use !important rules that force the rule over global rules  with the selector .accommodation only **/ 
     }
-    /* hebergements */
-    .hebergements-cards {
+    /* accommodation */
+    .accommodation-cards {
         flex-direction: column;
     }
-    .hebergements-cards a{
+    .accommodation-cards a{
         width:100%;
     }
     /* activity */
