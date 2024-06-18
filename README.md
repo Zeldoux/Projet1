@@ -31,4 +31,3 @@ Technologies utilisées :
     
       Css
       Html
-      Figma(maquette)
