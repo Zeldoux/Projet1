@@ -16,6 +16,7 @@
     color: var(--main-color);
 }
 
+
 body {
     display: flex;
     justify-content: center;
@@ -147,6 +148,10 @@ nav a:hover{
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     
+}
+/* set location img color to black */
+.fa-location-dot {
+    color:black;
 }
 /* research button style */
 .research-form button{
@@ -439,6 +444,7 @@ footer .footer-box_content {
     }
     .activity-cards .card-content{
         padding-bottom:1.5rem;
+        
     }
 }
 
@@ -479,6 +485,7 @@ footer .footer-box_content {
         color:var(--main-color);
         padding-bottom: 1rem;
     }
+    /* remove top border effect */
     nav a:hover{
         border-top:none;
     }
@@ -525,13 +532,11 @@ footer .footer-box_content {
     /** filter **/
     .filter-content {
         width:100%;
-        display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         align-items: start;
     }
     .filter-content ul{
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         gap:10px;
