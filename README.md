@@ -8,6 +8,7 @@ Une maquette Figma contenant la version mobile,tablette,desktop,ultrawide
 
 
 Spécifications techniques :
+
     -Les icones proviennent de la librairie "Font Awesome"
     -La police d'écriture devait être "Raleway" 
     -Les couleurs à respecter étaient : bleu (#0065FC), le bleu clair (#DEEBFF) et le gris pour le fond (#F2F2F2).
@@ -16,7 +17,7 @@ Spécifications techniques :
     -Aucun framework CSS (type BootStrap ou Tailwind CSS) ou préprocesseur CSS (type Sass
     -ou Less) ne doit être utilisé.
     -Aucun autre langage ne doit être utilisé (comme JavaScript, par exemple).
-
+    
 
 Spécificité Fonctionnelles :
     
