@@ -393,7 +393,6 @@ footer .footer-box_content {
 
     /* filter selection */
     .filter-content {
-        display:flex;
         flex-direction: column;
         align-items:flex-start;
         gap:20px;
