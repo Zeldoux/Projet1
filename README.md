@@ -4,7 +4,7 @@ Deuxième projet du parcours de développeur web avec OpenClassrooms. L'objectif
 
 Éléments fournis pour le projet :
 
-Une maquette Figma contenant la version mobile,tablette,desktop,ultrawide
+    Une maquette Figma contenant la version mobile,tablette,desktop,ultrawide
 
 
 Spécifications techniques :
